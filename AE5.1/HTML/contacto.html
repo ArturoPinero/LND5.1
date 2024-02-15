@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="/CSS/contacto.css">
+    <link rel="icon" href="/img/favicon-96x96.png">
+</head>
+<body>
+    <h1>La web de las artes</h1>
+    <h2>SECCIÓN: Contáctanos</h2>
+    <ul>
+        <li><a href="/index.html">Inicio</a></li>
+        <li><a href="musica.html">Musica</a></li>
+        <li><a href="cine.html">Cine</a></li>
+        <li><a href="generosLiterarios.html">Géneros Literarios</a></li>
+        <li><a href="multimedia.html">Multimedia</a></li>
+        <li><a href="contacto.html">Contactanos</a></li>
+    </ul>
+    <hr>
+    <form name="formulario" method="post" action="/send.php">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <div>
+                <label>
+                    Nombre:
+                    <input type="text" name="nombre" placeholder="Introduce tu nombre..." required/>
+                </label>
+            </div>
+            <div>
+                <label>
+                    Apellidos:
+                    <input type="text" name="apellidos" placeholder="Introduce tus apellidos..." required/>
+                </label>
+            </div>
+            <div>
+                <label>
+                    Email:
+                    <input type="email" name="email" placeholder="usuario@email.com" required/>
+                </label>
+            </div>
+            <div>
+                <label>
+                    Fecha de nacimiento:
+                    <input type="date" name="fecha" min="1924-01-01" max="2024-01-31" required/>
+                </label>
+            </div>
+            <div>
+                <label>
+                    Edad:
+                    <input type="number" name="edad" min="5" max="100" required/>
+                </label>
+            </div>
+            <div>
+                Sexo:
+                <input type="radio" name="sexo" value="H" checked/> Hombre
+                <input type="radio" name="sexo" value="M" /> Mujer
+            </div>
+            <div>
+                <label for="so">País:</label>
+                <select name="so" id="so" required>
+                    <option value="" selected="selected">- Selecciona -</option>
+                    <option value="españa">España</option>
+                    <option value="francia">Francia</option>
+                    <option value="portugal">Portugal</option>
+                    <option value="italia">Italia</option>
+                </select>
+            </div>
+        </fieldset>
+    
+        <fieldset>
+            <legend>Otros Datos</legend>
+            <div>
+                Mensaje:
+                <textarea name="mensaje" id="" cols="40" rows="10" placeholder="Introduce tu mensaje..."></textarea>
+            </div>
+            <div>
+                Adjunta una foto...
+                <input type="file" name="adjunto" accept="" multiple/>
+            </div>    
+        </fieldset>
+    
+        <div>
+            <input type="checkbox" name="condiciones" required/>
+            He leído las condiciones...
+        </div>
+    
+        <div>
+            <input type="reset" value="Limpiar"/>
+            <input type="submit" value="Enviar"/>
+        </div>
+    </form>
+    <h2>Centro de referencia</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7015.558584052439!2d-16.28582042571409!3d28.456068892074406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41cceee5a8035f%3A0xab9f2a74d9e68b51!2sCIFP%20C%C3%A9sar%20Manrique!5e0!3m2!1ses!2ses!4v1708000951199!5m2!1ses!2ses" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    <hr>
+    <a href="">Inicio</a>
+</body>
+</html>
